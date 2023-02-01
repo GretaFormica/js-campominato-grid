@@ -1,0 +1,48 @@
+/* reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Utils */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* general */
+
+body {
+    background-color: #7fffd4;
+}
+
+#grid {
+    width: 900px;
+    height: 900px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#grid,
+.square {
+    border: 2px solid black;
+}
+
+.square {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    cursor: pointer;
+}
+
+.square.active {
+    background-color: white;
+}
